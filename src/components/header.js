@@ -1,43 +1,27 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      marginBottom: `1.45rem`,
       textAlign: `center`,
     }}
   >
     <div
       style={{
+        backgroundColor: '#00619e',
+        height: 40,
+      }}
+    ></div>
+    <div
+      style={{
+        backgroundColor: '#ffffff',
         margin: `0 auto`,
-        maxWidth: 800,
-        padding: `1.45rem 1.0875rem`,
+        height: 40,
+        boxShadow: `0 2px 3px rgba(25, 41, 61, 0.13)`,
       }}
     >
-      <a href="https://www.gatsbyjs.org">
-        <img
-          alt="Gatsby"
-          src="https://www.gatsbyjs.org/monogram.svg"
-          width="48"
-        />
-      </a>
-      <a href="https://www.apollographql.com/">
-        <img
-          alt="Apollo"
-          src="https://rawgit.com/apollographql/apollo-client/master/docs/source/logo/square.png"
-          width="48"
-          style={{ marginLeft: `16px`, marginRight: `16px` }}
-        />
-      </a>
-      <a href="https://www.netlify.com">
-        <img
-          alt="Netlify"
-          src="https://www.netlify.com/img/press/logos/logomark.png"
-          width="48"
-        />
-      </a>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
